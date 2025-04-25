@@ -2,7 +2,6 @@ const express = require('express');
 const nodemailer = require('nodemailer');
 const router = express.Router();
 
-// ✅ Create transporter ONCE outside the POST
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
@@ -11,12 +10,10 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-// (Optional) Handle GET requests nicely
 router.get('/', (req, res) => {
-  res.send('✅ Contact API is ready. Please POST your form data.');
+  res.send('Contact API is ready. Please POST your form data.');
 });
 
-// ✅ Proper POST request handling
 router.post('/', async (req, res) => {
   const { name, email, message } = req.body;
 
@@ -25,7 +22,7 @@ router.post('/', async (req, res) => {
   }
 
   const mailOptions = {
-    from: process.env.EMAIL_USER,   // ✅ Important: YOUR email, not user's email
+    from: process.env.EMAIL_USER,
     to: process.env.EMAIL_TO,
     subject: `New Contact Message from ${name}`,
     text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
@@ -33,10 +30,10 @@ router.post('/', async (req, res) => {
 
   try {
     await transporter.sendMail(mailOptions);
-    console.log('✅ Email sent');
+    console.log('Email sent');
     res.json({ success: true, message: 'Message sent successfully!' });
   } catch (error) {
-    console.error('❌ Error sending email:', error);
+    console.error('Error sending email:', error);
     res.status(500).json({ error: 'Failed to send email' });
   }
 });
