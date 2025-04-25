@@ -1,0 +1,8 @@
+.project-card {
+    perspective: 1000px;
+    transition: transform 0.3s;
+  }
+  .project-card:hover {
+    transform: scale(1.02) rotateY(3deg) rotateX(-3deg);
+  }
+  

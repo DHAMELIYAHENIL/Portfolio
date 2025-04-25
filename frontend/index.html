@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Henil Dhameliya | Creative Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Orbitron', sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+      color: #e0e0e0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: #111;
+      text-align: center;
+      padding: 3rem 1rem;
+      border-bottom: 2px solid #333;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #4ecdc4;
+    }
+    header p {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+    nav {
+      margin-top: 2rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #4ecdc4;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ff6b6b;
+    }
+    main {
+      flex: 1;
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 5rem;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #ff6b6b;
+      border-bottom: 2px solid #4ecdc4;
+      display: inline-block;
+      padding-bottom: 0.3rem;
+    }
+    .card {
+      background: #222;
+      padding: 2rem;
+      margin: 2rem 0;
+      border: 1px solid #4ecdc4;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(78, 205, 196, 0.2);
+      transition: transform 0.4s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+    }
+    .skills ul {
+      list-style: square inside;
+      color: #4ecdc4;
+    }
+    .skills li {
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+    }
+    .contact a {
+      color: #4ecdc4;
+      text-decoration: none;
+      margin: 0 0.5rem;
+      font-weight: bold;
+    }
+    .contact a:hover {
+      color: #ff6b6b;
+    }
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 2rem;
+      border-top: 2px solid #333;
+    }
+    footer p {
+      color: #777;
+      font-size: 0.9rem;
+    }
+  
+    form#contactForm {
+      background: #111;
+      border: 1px solid #4ecdc4;
+      padding: 2rem;
+      border-radius: 12px;
+      margin-top: 2rem;
+      box-shadow: 0 0 15px rgba(78, 205, 196, 0.15);
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    form#contactForm input,
+    form#contactForm textarea {
+      width: 100%;
+      padding: 1rem;
+      margin-bottom: 1.2rem;
+      border: 1px solid #333;
+      border-radius: 8px;
+      background-color: #1c1c1c;
+      color: #fff;
+      font-size: 1rem;
+      transition: border 0.3s, box-shadow 0.3s;
+    }
+    form#contactForm input:focus,
+    form#contactForm textarea:focus {
+      border-color: #4ecdc4;
+      box-shadow: 0 0 6px #4ecdc4;
+      outline: none;
+    }
+    form#contactForm button {
+      width: 100%;
+      background-color: #4ecdc4;
+      color: #000;
+      font-weight: bold;
+      font-size: 1.1rem;
+      padding: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    form#contactForm button:hover {
+      background-color: #3bbdb4;
+    }
+    #formResponse {
+      margin-top: 1rem;
+      text-align: center;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #ff6b6b;
+    }
+  </style>
+   
+</head>
+<body>
+  <header>
+    <h1>Henil Dhameliya</h1>
+    <p>Future-Focused Developer | Sheridan College</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! I'm a computer programming student at Sheridan College. I love creating immersive digital experiences and writing clean, efficient code. My goal is to blend innovation with functionality.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="card">
+        <h3>Smart Scheduler App</h3>
+        <p>A dynamic scheduling application that uses AI to optimize daily plans. Built with Node.js, React, and MongoDB.</p>
+        <p><a href="https://github.com/henildhameliya" target="_blank">GitHub</a> | <a href="#">Live Demo</a></p>
+      </div>
+      <div class="card">
+        <h3>Crypto Tracker</h3>
+        <p>Real-time cryptocurrency price tracker with data visualization. Developed using JavaScript, API integration, and Chart.js.</p>
+        <p><a href="https://github.com/henildhameliya" target="_blank">GitHub</a> | <a href="#">Live Demo</a></p>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>JavaScript (ES6+), Python, C++</li>
+        <li>React, Node.js, Express</li>
+        <li>MongoDB, MySQL</li>
+        <li>Git, GitHub, Docker Basics</li>
+        <li>Problem Solving & Algorithms</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out!</p>
+      <p>
+        <a href="henildhameliya1@gmail.com" target="_blank">Email</a> |
+        <a href="https://github.com/henildhameliya" target="_blank">GitHub</a> |
+        <a href="https://linkedin.com/in/henil-dhameliya-743028241" target="_blank">LinkedIn</a>
+      </p>
+    </section>
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <p>Feel free to send me a message!</p>
+      
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    
+      <div id="formResponse"></div>
+    </section>
+    
+  </main>
+  <script src="script.js"></script>
+
+  <footer>
+    <p>&copy; 2025 Henil Dhameliya. Crafted with passion and code.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,15 @@
+[
+    {
+      "title": "PortFolio Website",
+      "description": "A website that represents my skills, projects, and journey as a Programmer.",
+      "techStack": ["HTML, CSS, JavaScript, Node.js, Express.js, MongoDB, React, Three.js (for 3D effects)"],
+      "link": "https://github.com/henildhameliya"
+    },
+    {
+      "title": "Crypto Tracker",
+      "description": "Track crypto prices in real-time.",
+      "techStack": ["JavaScript", "Chart.js", "API"],
+      "link": "https://github.com/henildhameliya"
+    }
+  ]
+  
